@@ -35,8 +35,8 @@ const Input = () => {
       <div className='below300'>1 EUR = 250 HUF</div>
       <div className='above300'>1 USD = 350 HUF</div>
       {/* Ha működne a lekérés, így nézne ki:
-      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 EUR = {amount * rate.EUR} EUR</div>
-      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 USD = {amount * rate.USD} USD</div> */}
+      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 EUR = {EUR * rate.HUF} EUR</div>
+      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 USD = {USD * rate.HUF} USD</div> */}
     </div>
   );
 };
