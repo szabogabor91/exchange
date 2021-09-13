@@ -1,8 +1,10 @@
 import './App.css';
+import Input from './Input';
 
-function App() {
+function App () {
   return (
     <div>
+      <Input />
     </div>
   );
 }
