@@ -4,4 +4,25 @@
 
 .rates {
   text-align: center;
+  margin-top: 10px;
+}
+
+.below300 {
+  color: red;
+}
+
+.above300 {
+  color: green;
+}
+
+.header1 {
+  margin-top: 10px;
+}
+
+.header2 {
+  margin-bottom: 10px;
+}
+
+.header3 {
+  font-weight: bold;
 }

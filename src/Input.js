@@ -26,11 +26,17 @@ const Input = () => {
 
   return (
     <div className='form-group'>
-      <h1>Deviza váltás</h1>
-      <div>Forint (HUF)</div>
+      <h1 className='header1'>Deviza váltás</h1>
+      <div className='header2'>Forint (HUF)</div>
       <input className='form-control' type='number' value={amount} onChange={(e) => setAmount(e.target.value)} />
-      <h3 className='rates'>{amount} HUF = {Math.round(amount * USD * 100) / 100} USD</h3>
       <h3 className='rates'>{amount} HUF = {Math.round(amount * EUR * 100) / 100} EUR</h3>
+      <h3 className='rates'>{amount} HUF = {Math.round(amount * USD * 100) / 100} USD</h3>
+      <div className='header3'>Árfolyam:</div>
+      <div className='below300'>1 EUR = 250 HUF</div>
+      <div className='above300'>1 USD = 350 HUF</div>
+      {/* Ha működne a lekérés, így nézne ki:
+      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 EUR = {amount * rate.EUR} EUR</div>
+      <div className={amountTotal > 300 ? 'above300' : 'below300'}>1 USD = {amount * rate.USD} USD</div> */}
     </div>
   );
 };
