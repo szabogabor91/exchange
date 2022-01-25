@@ -1,0 +1,10 @@
+app: exchange
+env: staging
+namespace: staging
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.32.0
+values:
+  image:
+    repository: nginxa
