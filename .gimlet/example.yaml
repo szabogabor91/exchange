@@ -1,6 +1,6 @@
 app: example
 env: example
-namespace: example123
+namespace: example
 chart:
   repository: https://chart.onechart.dev
   name: onechart
@@ -8,7 +8,6 @@ chart:
 values:
   containerPort: 800
   image:
-    repository: nginx123
     tag: 1.19.3.1
   replicas: 6
   volumes:
