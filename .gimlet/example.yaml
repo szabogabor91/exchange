@@ -6,10 +6,6 @@ chart:
   name: onechart
   version: 0.32.0
 values:
-  containerPort: 800
-  image:
-    tag: 1.19.3.1
-  replicas: 6
   volumes:
     - name: data123
       path: /data
