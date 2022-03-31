@@ -1,0 +1,15 @@
+app: example
+env: example
+namespace: valamimas
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.32.0
+values:
+  containerPort: 1111
+  image:
+    repository: nginxmasmas
+  replicas: 2
+strategicMergePatches: ""
+json6902Patches: []
+manifests: ""
