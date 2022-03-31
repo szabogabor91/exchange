@@ -5,12 +5,7 @@ chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
-values:
-  volumes:
-    - name: data123
-      path: /data
-      size: 10Gi
-      storageClass: ""
+values: {}
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
